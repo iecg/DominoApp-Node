@@ -10,7 +10,7 @@ angular.module('menu', [])
     else {
       $ionicPopup.alert({
         title: 'Add Players',
-        template: '<p class="dark">Add players before starting a new game</p>',
+        template: '<p class="dark">Add at least 4 players before starting a new game</p>',
         buttons: [
           {
             text: 'OK',
