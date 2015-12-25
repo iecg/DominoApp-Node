@@ -4,7 +4,7 @@ angular.module('menu', [])
   $scope.savedGame = Game.savedGame();
 
   $scope.newGame = function () {
-    if (Players.all().length > 4) {
+    if (Players.all().length >= 4) {
       $state.go('game');
     }
     else {
