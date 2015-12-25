@@ -5,7 +5,7 @@ angular.module('menu', [])
 
   $scope.newGame = function () {
     if (Players.all().length >= 4) {
-      $state.go('game');
+      $state.go('new_game');
     }
     else {
       $ionicPopup.alert({
